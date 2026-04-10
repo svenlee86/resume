@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李晶晶 | 产品经理 - 个人主页</title>
+    <style>
+        :root {
+            --bg-color: #0a0e14;
+            --card-bg: #161b22;
+            --text-main: #e6edf3;
+            --text-gray: #8b949e;
+            --accent-color: #58a6ff;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            background: linear-gradient(120deg, #58a6ff, #bc8cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-top: 10px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Section Styling */
+        section {
+            margin-top: 60px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* Grid Layout for Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        /* Experience Timeline */
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 40px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--accent-color);
+            box-shadow: 0 0 10px var(--accent-color);
+        }
+
+        .date {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .company {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .project-tag {
+            display: inline-block;
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent-color);
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-gray);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 600px) {
+            .contact-info { flex-direction: column; gap: 5px; }
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>李晶晶</h1>
+        <div class="subtitle">产品经理 | 16年互联网从业经验 (10年研发 + 6年产品) [cite: 6, 12]</div>
+        <div class="contact-info">
+            <span>📞 18761860857 [cite: 4]</span>
+            <span>📧 656373457@qq.com [cite: 5]</span>
+            <span>📍 意向城市：南京 [cite: 6]</span>
+        </div>
+    </header>
+
+    <section id="advantage">
+        <h2>核心优势</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>战略与规划 [cite: 7]</h3>
+                <p>深耕产品路线图制定，确保产品演进与公司整体战略高度契合。 [cite: 8]</p>
+            </div>
+            <div class="skill-card">
+                <h3>技术+产品双背景 [cite: 12]</h3>
+                <p>具备10年后端研发底蕴，沟通技术方案无障碍，获PMP认证。 [cite: 12, 14]</p>
+            </div>
+            <div class="skill-card">
+                <h3>安全与大数据经验 [cite: 96, 146]</h3>
+                <p>主导过供应链安全、资产探测及交通大数据平台等复杂项目。 [cite: 96, 111, 146]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>工作经历</h2>
+        
+        <div class="timeline-item">
+            <div class="date">2024.01 - 至今 [cite: 25]</div>
+            <div class="company">江苏齐同浩渺信息科技有限公司 [cite: 24]</div>
+            <div class="project-tag">产品经理</div>
+            <ul>
+                <li>主导市场调研与需求分析，制定产品愿景及详细功能规划。 [cite: 26, 27]</li>
+                <li>跨部门协调研发、UI/UX，把控从概念到上市的全流程管理。 [cite: 30, 32]</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <div class="date">2022.08 - 2024.01 [cite: 35]</div>
+            <div class="company">北京墨云科技有限公司 [cite: 33]</div>
+            <div class="project-tag">产品经理</div>
+            <ul>
+                <li>负责安全类产品的需求管理、迭代及销售/培训资料撰写。 [cite: 36, 37]</li>
+                <li>参与项目投标，输出技术方案，助力关键项目拿下。 [cite: 41, 46]</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <div class="date">2016.03 - 2022.08 [cite: 74, 75, 76]</div>
+            <div class="company">浩鲸云 / 戎光科技 / 百氨汇 [cite: 52, 68, 73]</div>
+            <div class="project-tag">产品经理</div>
+            <p>深耕人防业务、银行B2B平台及数据管理体系建设，通过数据驱动提升运营效率。 [cite: 58, 69, 78]</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>重点项目</h2>
+        <div class="skill-card" style="margin-bottom: 20px;">
+            <div class="date">2024.01 - 2025.06 [cite: 98]</div>
+            <h3>软件供应链安全管理平台 [cite: 96]</h3>
+            <p>在引入、生产、应用三大环节进行全生命周期管控。集成SAST、IAST、SCA等技术，构建一体化安全解决方案，并引入AI模型分析业务痛点。 [cite: 99, 102, 107]</p>
+        </div>
+        <div class="skill-card">
+            <div class="date">2022.08 - 2023.05 [cite: 139]</div>
+            <h3>智能攻击路径管理平台 [cite: 137]</h3>
+            <p>基于AI与大数据技术，利用贝叶斯攻击图生成全景杀伤链，通过VPT技术评估漏洞优先级，成功覆盖电信、能源、军队等关键行业客户。 [cite: 140, 143, 144]</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>教育与资质</h2>
+        <p><strong>淮阴工学院</strong> | 交通工程 | 本科 (2005-2009) [cite: 223, 226]</p>
+        <p><strong>PMP认证</strong> | 项目管理专业人士资格 [cite: 225]</p>
+    </section>
+
+    <footer>
+        <p>© 2026 李晶晶 - 保留所有权利</p>
+    </footer>
+</div>
+
+</body>
+</html>
